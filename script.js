@@ -14,11 +14,11 @@ function rot13(encodedStr){
    let decodedArr = []; 
 	// check the availiblity
 	for(let i=0 ; i< inputString.length ; i++){
-		if(lookup[ inputString[i] ] === undefined){
-			decodeArr[i] += inputString[i] ;
+		if(lookup[ encodedStr[i] ] === undefined){
+			decodeArr[i] += encodedStr[i] ;
 		}
 		else{
-			decodeArr[i] += lookup[ inputString[i] ]
+			decodeArr[i] += lookup[ encodedStr[i] ]
 		}
 		
 	}
