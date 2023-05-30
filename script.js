@@ -13,7 +13,7 @@ const lookup = {
 function rot13(encodedStr){
    let decodedArr = []; 
 	// check the availiblity
-	for(let i=0 ; i< inputString.length ; i++){
+	for(let i=0 ; i< encodedStr.length ; i++){
 		if(lookup[ encodedStr[i] ] === undefined){
 			decodeArr[i] += encodedStr[i] ;
 		}
